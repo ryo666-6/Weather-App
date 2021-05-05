@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body> 
+    <div class="header">
+        <h1>世界の天気</h1>
+    </div>
+
+    <div class="button-section">
+        <button class="city" type="button" data-key="Tokyo,JP">東京</button>
+        <button class="city" type="button" data-key="Seattle,US">シアトル</button>
+        <button class="city" type="button" data-key="London,UK">ロンドン</button>
+        <button class="city" type="button" data-key="Paris,FR">パリ</button>
+        <button class="city" type="button" data-key="Berlin,DE">ベルリン</button>
+        <button class="city" type="button" data-key="Shanghai,CN">上海</button>   
+    </div>
+
+    <div class="temperature">
+        <p>場所：
+            <span class="where"></span>
+        </p>
+        <p>天気：
+            <span class="weather"></span>
+        </p>
+        <p>現在の気温：
+            <span class="degree"></span>
+        ℃</p>
+        <p>現在の湿度：
+            <span class="humidity"></span>
+        %</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- http://api.openweathermap.org/data/2.5/weather?q=Tokyo,JP&appid=e8b390837bdaa5ecda28903339b6a197&lang=ja&units=metric -->
